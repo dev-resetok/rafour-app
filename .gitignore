@@ -2,8 +2,21 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
 # Custom .gitignore for rafour-app
-inputs/
-outputs/
+# =========================
+# inputs 폴더 설정
+# =========================
+# inputs 폴더 안의 모든 내용물 무시
+inputs/*
+# 단, 폴더 유지를 위한 .gitkeep 파일은 예외 처리(!)
+!inputs/.gitkeep
+
+# =========================
+# outputs 폴더 설정
+# =========================
+# outputs 폴더 안의 모든 내용물 무시
+outputs/*
+# 단, 폴더 유지를 위한 .gitkeep 파일은 예외 처리(!)
+!outputs/.gitkeep
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
