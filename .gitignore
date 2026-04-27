@@ -1,19 +1,19 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
-# Custom .gitignore for rafour-app
-# =========================
-# inputs 폴더 설정
-# =========================
-# inputs 폴더 안의 모든 내용물 무시
+### Custom .gitignore for rafour-app ###
+# ignore 폴더
+_ignore/*
+
+# mac finder 색인 파일(폴더) 무시
+.DS_Store
+
+# inputs 폴더 설정: inputs 폴더 안의 모든 내용물 무시
 inputs/*
 # 단, 폴더 유지를 위한 .gitkeep 파일은 예외 처리(!)
 !inputs/.gitkeep
 
-# =========================
-# outputs 폴더 설정
-# =========================
-# outputs 폴더 안의 모든 내용물 무시
+# outputs 폴더 설정: utputs 폴더 안의 모든 내용물 무시
 outputs/*
 # 단, 폴더 유지를 위한 .gitkeep 파일은 예외 처리(!)
 !outputs/.gitkeep
