@@ -8,6 +8,9 @@ _ignore/*
 # mac finder 색인 파일(폴더) 무시
 .DS_Store
 
+# hailo-apps
+hailo-apps/*
+
 # inputs 폴더 설정: inputs 폴더 안의 모든 내용물 무시
 inputs/*
 # 단, 폴더 유지를 위한 .gitkeep 파일은 예외 처리(!)
