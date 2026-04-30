@@ -8,9 +8,15 @@ import json
 import cv2
 
 # 1. hailo-apps 모듈을 사용할 수 있도록 시스템 경로에 추가
-hailo_apps_dir = Path("./hailo-apps").resolve()
+# 스크립트가 위치한 경로를 기준으로 hailo-apps 폴더를 찾도록 수정
+hailo_apps_dir = (Path(__file__).parent / "hailo-apps").resolve()
+print(f"DEBUG: Resolving hailo-apps directory to: {hailo_apps_dir}")
+print(f"DEBUG: Does hailo-apps exist? {hailo_apps_dir.exists()}")
+
 if str(hailo_apps_dir) not in sys.path:
     sys.path.insert(0, str(hailo_apps_dir))
+
+print(f"DEBUG: sys.path is: {sys.path[:3]}") # 상위 3개 경로만 확인
 
 # hailo-apps의 핵심 컴포넌트들 가져오기
 from hailo_apps.python.core.common.hailo_inference import HailoInfer
